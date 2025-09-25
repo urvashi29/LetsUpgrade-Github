@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+    z-index: 10;
+}
+
+.navbar_brand {
+    width: 150px;
+    height: 100%;
+}
+
+.brand_logo {
+    width: 100%;
+    height: 100%;
+}
+
+.language_dropdown {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.dropdown_container {
+    border: 1px solid white;
+
+    /* top/bottom left/right */
+    padding: 10px 5px;
+    border-radius: 4px;
+    background-color: rgb(163, 157, 157);
+}
+
+.signin_button {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.navbar_nav_items {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Banner */
+.bg_image_container {
+    width: 100%;
+    height: 462px;
+}
+
+.hero_bg_image {
+    width: 100%;
+    height: 100%;
+}
+
+.bg_overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 462px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero_card {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero_title {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.hero_subtitle,
+.hero_description {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hero_description {
+    /* top/bottom left/right */
+    margin: 0 50px;
+}
+
+.email_input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    padding-left: 7px;
+}
+
+.email_form_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2px;
+}
+
+.form_container {
+    background-color: white;
+    width: 50%;
+    height: 50px;
+    position: relative;
+}
+
+.primary_button {
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    height: 50px;
+
+}
+
+/* Feature- 1 */
+.feature {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 16px;
+    gap: 20px;
+    border-top: 8px solid #222;
+}
+
+.feature_details {
+    text-align: center;
+    padding: 0 96px;
+}
+
+.feature_title {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.feature_sub_title {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.feature_image_container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.feature_image {
+    width: 100%;
+}
+
+.feature:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.feature_background_video_container {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 13%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    z-index: -2;
+}
+
+.feature_background_video {
+    width: 100%;
+}
+
+/* Feature-2 */
+
+.feature_2_poster_container {
+    position: absolute;
+    top: 60%;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 16px;
+    gap: 15px;
+}
+
+.poster_container {
+    width: 20%;
+}
+
+.poster {
+    width: 100%;
+    height: 100%;
+}
+
+.poster_details {
+    width: 60%;
+}
+
+h4 {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.download_gif_conatiner {
+    width: 20%;
+    height: 100%;
+}
+
+.gif {
+    width: 100%;
+    height: 100%;
+}
+
+/* Feature_3 */
+.feature_3_background_container {
+    max-width: 63%;
+    max-height: 47%;
+    z-index: -2;
+    top: 9%;
+    left: 19%;
+}
+
+
+/* Footer */
+footer {
+    border: 8px solid #222;
+    padding: 32px 320px;
+    color: #757575;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.footer_row_2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 20px;
+
+}
+
+#style_heading {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer_row_3 .dropdown_container {
+    border: 1px solid #757575;
+    color: #757575;
+    padding: 10px 5px;
+    width: fit-content;
+}
